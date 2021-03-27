@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Sander0542.UnraidAPI.Types\Sander0542.UnraidAPI.Types.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="GraphQL.Primitives" Version="3.2.2" />
+    </ItemGroup>
+
+</Project>
