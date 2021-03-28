@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{38B9ED2F-970C-44CC-8F77-2D0BBDCA6D18}"
+ProjectSection(SolutionItems) = preProject
+	src\src.props = src\src.props
+EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sander0542.UnraidAPI", "src\Sander0542.UnraidAPI\Sander0542.UnraidAPI.csproj", "{5502A0AF-1B61-487E-8FE3-E0A0AF8E3FC3}"
 EndProject
