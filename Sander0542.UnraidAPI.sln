@@ -5,6 +5,15 @@ ProjectSection(SolutionItems) = preProject
 	src\src.props = src\src.props
 EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{63F75859-4698-4EDE-8B70-4ACBB8BC425A}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		dotnet-tools.json = dotnet-tools.json
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+		root.props = root.props
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sander0542.UnraidAPI", "src\Sander0542.UnraidAPI\Sander0542.UnraidAPI.csproj", "{5502A0AF-1B61-487E-8FE3-E0A0AF8E3FC3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sander0542.UnraidAPI.Types", "src\Sander0542.UnraidAPI.Types\Sander0542.UnraidAPI.Types.csproj", "{E9B5BE54-64D9-4F40-993A-D2574ECD6831}"
