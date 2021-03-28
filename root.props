@@ -9,7 +9,7 @@
         <NeutralLanguage>en-US</NeutralLanguage>
         <NoWarn>$(NoWarn);CS1591;NU5105;NU5125</NoWarn>
         <Nullable>annotations</Nullable>
-        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <PackageProjectUrl>https://github.com/Sander0542/UnraidAPI</PackageProjectUrl>
         <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
         <PackageTags>GraphQL;Unraid</PackageTags>
@@ -23,7 +23,7 @@
         <Content Include="$(MSBuildThisFileDirectory)/LICENSE">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
             <Pack>true</Pack>
-            <PackagePath>LICENSE.txt</PackagePath>
+            <PackagePath>LICENSE</PackagePath>
             <Visible>false</Visible>
         </Content>
     </ItemGroup>
