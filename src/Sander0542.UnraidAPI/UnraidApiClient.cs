@@ -4,6 +4,7 @@ using GraphQL;
 using GraphQL.Client.Abstractions;
 using GraphQL.Client.Http;
 using GraphQL.Client.Serializer.SystemTextJson;
+using Microsoft.Extensions.Options;
 using Sander0542.UnraidAPI.Abstractions;
 using Sander0542.UnraidAPI.Types;
 
@@ -25,6 +26,10 @@ namespace Sander0542.UnraidAPI
         }
 
         public UnraidApiClient(Action<UnraidApiClientOptions> configure) : this(configure.New())
+        {
+        }
+
+        public UnraidApiClient(IOptions<UnraidApiClientOptions> options) : this(options.Value)
         {
         }
 
