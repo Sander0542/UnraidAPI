@@ -13,12 +13,8 @@ namespace Sander0542.UnraidAPI
     public class UnraidApiClient : IUnraidApiClient
     {
         private readonly GraphQLHttpClient _graphQlClient;
-
-        public UnraidApiClient(string serverAddress, string apiKey) : this(new Uri(serverAddress), apiKey)
-        {
-        }
-
-        public UnraidApiClient(Uri serverAddress, string apiKey) : this(o => {
+        
+        public UnraidApiClient(string serverAddress, string apiKey) : this(o => {
             o.ServerAddress = serverAddress;
             o.ApiKey = apiKey;
         })
@@ -35,7 +31,7 @@ namespace Sander0542.UnraidAPI
 
         public UnraidApiClient(UnraidApiClientOptions options)
         {
-            var endPoint = new Uri(options.ServerAddress, "graphql");
+            var endPoint = new Uri(new Uri(options.ServerAddress), "graphql");
 
             _graphQlClient = new GraphQLHttpClient(endPoint, new SystemTextJsonSerializer());
             _graphQlClient.HttpClient.DefaultRequestHeaders.Add("x-api-key", options.ApiKey);
